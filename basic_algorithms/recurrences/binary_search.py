@@ -5,7 +5,7 @@ import math
 
 def bin_search_iter(num, lst, low, high):
 	while (high >= low):
-		mid = int(math.ceil((low + high) / 2))
+		mid = int(math.floor((low + high) / 2))
 		if lst[mid] == num:
 			return mid
 		if lst[mid] > num:
@@ -15,7 +15,7 @@ def bin_search_iter(num, lst, low, high):
 	return -1
 
 def bin_search_rec(num, lst, low, high):
-	mid = int(math.ceil((low + high) / 2))
+	mid = int(math.floor((low + high) / 2))
 	if num == lst[mid]:
 		return mid
 	elif (num < lst[mid]) and (mid > low):
@@ -25,7 +25,7 @@ def bin_search_rec(num, lst, low, high):
 	return -1
 
 def bin_search_hybrid(num, lst, low, high):
-	mid = int(math.ceil((low + high) / 2))
+	mid = int(math.floor((low + high) / 2))
 	if num == lst[mid]:
 		return mid
 	elif (num < lst[mid]) and (mid > low):
