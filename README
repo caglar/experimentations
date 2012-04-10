@@ -1,8 +1,19 @@
-Basic implementations (quick&dirty) of some simple algorithms that are in CRLS's book.
+Basic implementations (quick&dirty) of some simple algorithms.
 Languages used: C++ and Python.
 
 Currently Implemented Algorithms:
+
+Basic Recursive Algorithms:
+--------------------------
 Binary Search (iterative, recursive...)
 Linear Search
 Merge Sort
 
+Graph:
+-----
+Kruskal
+
+Math:
+------------------
+Mahalanabis Distance
+Calculate Covariance Matrix
