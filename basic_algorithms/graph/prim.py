@@ -1,9 +1,8 @@
-import random as rnd
+from utils import gen_random_graph
 
-#n is number of nodes
-#a is the number of edges
-def gen_random_graph(n, a, rng=None):
-	if rng is not None:
-		
 def prims(g):
 	pass
+
+if __name__=="__main__":
+	G = gen_random_graph(50, 650)
+	print G
